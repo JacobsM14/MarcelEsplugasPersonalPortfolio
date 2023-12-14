@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import './styles/page.css'
-import './App.css'
+import { useState } from "react";
+import "./styles/page.css";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -16,16 +16,7 @@ function App() {
           <h1>Marcel Esplugas</h1>
         </div>
         <div className={"imageShow"}>
-          <img
-            src="/Images/Logos/logo.png"
-            alt="Picture of the author"
-            style={{
-              width: 2000,
-              height: 2000
-            }}
-            width={2000}
-            height={2000}
-          />
+          <img src="/Images/Logos/logo.png" alt="Picture of the author" />
           <div className={"links"}>
             <a href="https://www.linkedin.com/in/marcelesplugas/">
               <svg
@@ -83,7 +74,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,26 +1,32 @@
-import Image from "next/image";
-import styles from "./styles/page.module.css";
-import { Fragment } from "react";
+import { useState } from 'react'
+import './styles/page.css'
+import './App.css'
 
-const Page = () => {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <Fragment>
-      <div className={styles.header + " " + styles.flexCont}>
-        <div className={styles.headerTitle + " " + styles.desktopTitle}>
+    <>
+      <div className={"header flexCont"}>
+        <div className={"headerTitle desktopTitle"}>
           <h1>Hi! I'm Marcel Esplugas</h1>
           <h4>I build Websites</h4>
         </div>
-        <div className={styles.headerTitle + " " + styles.mobileTitle}>
+        <div className={"headerTitle mobileTitle"}>
           <h1>Marcel Esplugas</h1>
         </div>
-        <div className={styles.imageShow}>
-          <Image
-            src="/images/Logos/logo.png"
+        <div className={"imageShow"}>
+          <img
+            src="/Images/Logos/logo.png"
             alt="Picture of the author"
+            style={{
+              width: 2000,
+              height: 2000
+            }}
             width={2000}
             height={2000}
           />
-          <div className={styles.links}>
+          <div className={"links"}>
             <a href="https://www.linkedin.com/in/marcelesplugas/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +82,8 @@ const Page = () => {
           </div>
         </div>
       </div>
-    </Fragment>
-  );
-};
+    </>
+  )
+}
 
-export default Page;
+export default App

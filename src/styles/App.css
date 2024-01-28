@@ -1,0 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+header{
+  /* background-color: var(--dark); */
+  background-image: url("/SVG/header.svg");
+}

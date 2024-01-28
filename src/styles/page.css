@@ -1,82 +1,84 @@
 /*?GLOBAL */
 .flexCont {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+/*?SECTIONS */
+/** HEADER */
+.header {
+  background-image: url("/SVG/header.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 6% 0%;
+}
+
+.desktopTitle {
+  display: none;
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  margin: 0;
+  width: 90%;
+  height: 60vh;
+}
+
+.imageShow {
+  width: 50%;
+}
+
+.imageShow img {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  box-shadow: -8px 8px 0px 1px var(--primary);
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--primary);
+  height: fit-content;
+  font-weight: 700;
+}
+
+.links a:hover {
+  color: var(--secondary);
+}
+
+.links a svg {
+  width: 100%;
+  height: 20%;
+}
+
+@media (min-width: 1024px) {
+  .flexCont {
+    flex-direction: row;
   }
-  
-  /*?SECTIONS */
-  /** HEADER */
-  .header {
-    background-image: url("/SVG/header.svg");
-    background-size: cover;
-    background-position: center;
-    padding: 10% 0%;
-  }
-  
-  .desktopTitle {
+
+  .mobileTitle {
     display: none;
   }
-  
-  .headerTitle {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary);
-    text-align: center;
-    margin: 0;
-    width: 90%;
-    height: 60vh;
+
+  .desktopTitle {
+    display: block;
   }
-  
-  .imageShow {
-    width: 50%;
+
+  .desktopTitle h1 {
+    font-size: 4em;
   }
-  
-  .imageShow img {
-    width: 100%;
-    height: 100%;
-    box-shadow: -8px 8px 0px 1px var(--primary);
-  }
-  
-  .links {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 1rem;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: var(--primary);
-    height: fit-content;
-    font-weight: 700;
-  }
-  
-  .links a:hover {
-    color: var(--secondary);
-  }
-  
-  .links a svg {
-    width: 100%;
-    height: 20%;
-  }
-  
-  @media (min-width: 1024px) {
-    .flexCont {
-      flex-direction: row;
-    }
-  
-    .mobileTitle {
-      display: none;
-    }
-  
-    .desktopTitle {
-      display: block;
-    }
-  
-    .desktopTitle h1 {
-      font-size: 4em;
-    }
-  }
+}

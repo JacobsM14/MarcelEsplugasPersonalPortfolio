@@ -14,4 +14,6 @@ body {
     var(--primary) 0%,
     var(--light) 100%
   );
+  margin: 0%;
+  padding: 0%;
 }

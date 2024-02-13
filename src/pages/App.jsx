@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import logo from './../assets/logo.png'
-import waveDown1 from '/SVG/header2.svg'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */ }
@@ -36,16 +35,28 @@ function App() {
           </div>
         </header>
         <div className='wave-down'>
-        <svg id="visual" viewBox="0 0 2000 200" width="2000" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 159L47.7 139C95.3 119 190.7 79 285.8 68.7C381 58.3 476 77.7 571.2 98.8C666.3 120 761.7 143 857 147C952.3 151 1047.7 136 1143 121.8C1238.3 107.7 1333.7 94.3 1428.8 100.2C1524 106 1619 131 1714.2 129.8C1809.3 128.7 1904.7 101.3 1952.3 87.7L2000 74L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#191825" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+          <svg id="visual" viewBox="0 0 2000 200" width="2000" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 159L47.7 139C95.3 119 190.7 79 285.8 68.7C381 58.3 476 77.7 571.2 98.8C666.3 120 761.7 143 857 147C952.3 151 1047.7 136 1143 121.8C1238.3 107.7 1333.7 94.3 1428.8 100.2C1524 106 1619 131 1714.2 129.8C1809.3 128.7 1904.7 101.3 1952.3 87.7L2000 74L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#191825" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
         </div>
-        <section id='presentation-section'>
-          <h2 className=''>ABOUT MY EXPERIENCES</h2>
-          <div id='presentation-section-global' className='grid grid-cols-13 gap-3 col-span-13 col-start-3'>
-            <div id='' className='grid grid-cols-5 col-span5 '>
-              <h6>Works</h6>
+        <div id='presentation-section' className='grid grid-cols-17 gap3'>
+          <h2 className='col-span-13 col-start-3'>ABOUT MY EXPERIENCES</h2>
+          <div id='presentation-section-global' className='grid grid-cols-13 gap-3 col-span-13'>
+            <div id='row-works' className='grid grid-cols-5 col-span-5'>
+              <h4 className='col-span-5'>Works</h4>
+              <div className='work-display'>
+                <div className='flex justify-start items-center flex-wrap'>
+                  <div className="imagen-prueba"></div>
+                  <h5>Web Developer</h5>
+                </div>
+                <ul>
+                  <li><span>Worked on: </span> Infinitum Projects</li>
+                  <li><span>Started on: </span>11/2023</li>
+                  <li><span>Currenly Working</span></li>
+                </ul>
+              </div>
             </div>
+
           </div>
-        </section>
+        </div>
       </div>
     </>
 

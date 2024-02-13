@@ -93,3 +93,37 @@ header nav a:hover{
 }
 
 /** SECTION1 */
+/*? WORKS PART */
+#row-works h4{
+  color: var(--light);
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.work-display{
+  background-color: var(--light);
+  border-radius: 10px;
+}
+
+.work-display .flex, .work-display ul{
+  padding: 20px;
+}
+
+.imagen-prueba{
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.work-display  h5{
+  font-size: 1.4em;
+}
+
+.work-display ul{
+  list-style-type: disc;
+}
+
+.work-display ul li span{
+  font-weight: 700;
+}

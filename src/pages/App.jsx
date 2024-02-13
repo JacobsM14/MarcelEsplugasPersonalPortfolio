@@ -29,7 +29,7 @@ function App() {
             </div>
             <div className='images-and-links grid col-span-6 grid-cols-6 col-start-12'>
               <img src={logo} alt="logo" className='col-span-6' />
-              <div className="url-svg">
+              <div className="url-svg grid col-span-6 grid-cols-6">
                 <a href=""><img src={cv} alt="cv" /></a>
                 <a href=""><img src={github} alt="github" /></a>
                 <a href=""><img src={linkedin} alt="linkedin" /></a>

@@ -66,14 +66,12 @@ header nav a:hover{
 }
 
 .url-svg{
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   margin-top: 20px;
 }
 
 .url-svg a img{
   width: 70px !important;
+  height: 70px !important;
   box-shadow: none;
   height: unset;
   fill: var(--primary);

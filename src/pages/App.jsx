@@ -4,6 +4,7 @@ import logo from './../assets/logo.png'
 // import viteLogo from '/vite.svg'
 {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */ }
 import './../styles/App.css'
+import { Works } from '../components/works_component/Works'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,22 +40,10 @@ function App() {
         </div>
         <div id='presentation-section' className='grid grid-cols-17 gap3'>
           <h2 className='col-span-13 col-start-3'>ABOUT MY EXPERIENCES</h2>
-          <div id='presentation-section-global' className='grid grid-cols-13 gap-3 col-span-13'>
-            <div id='row-works' className='grid grid-cols-5 col-span-5'>
-              <h4 className='col-span-5'>Works</h4>
-              <div className='work-display'>
-                <div className='flex justify-start items-center flex-wrap'>
-                  <div className="imagen-prueba"></div>
-                  <h5>Web Developer</h5>
-                </div>
-                <ul>
-                  <li><span>Worked on: </span> Infinitum Projects</li>
-                  <li><span>Started on: </span>11/2023</li>
-                  <li><span>Currenly Working</span></li>
-                </ul>
-              </div>
+          <div id='presentation-section-global' className='grid grid-cols-17 gap-3 col-span-13'>
+            <div id='row-works' className='col-span-5'>
+              <Works work="Web Developer" empresa="Infinitum Projects" start="11/2023" working="true" />
             </div>
-
           </div>
         </div>
       </div>

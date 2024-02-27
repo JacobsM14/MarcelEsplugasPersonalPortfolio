@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <div className="all-cont">
+        {/* HEADER */}
         <header className='padding-starter'>
           <nav className='flex justify-around'>
             <a href="#">Home</a>
@@ -36,6 +37,7 @@ function App() {
         <div className='wave-down'>
           <svg id="visual" viewBox="0 0 2000 200" width="2000" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 159L47.7 139C95.3 119 190.7 79 285.8 68.7C381 58.3 476 77.7 571.2 98.8C666.3 120 761.7 143 857 147C952.3 151 1047.7 136 1143 121.8C1238.3 107.7 1333.7 94.3 1428.8 100.2C1524 106 1619 131 1714.2 129.8C1809.3 128.7 1904.7 101.3 1952.3 87.7L2000 74L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#191825" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
         </div>
+        {/* ABOUTE ME SECTION */}
         <div id='presentation-section'>
           <h2>ABOUT MY EXPERIENCES</h2>
           <div id='presentation-section-global' className='flex justify-between'>
@@ -58,6 +60,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/* TECHNOLOGIES SECTION */}
         <div className="wave-up">
           <svg id="visual" viewBox="0 0 2000 200" width="2000" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 103L47.7 97.2C95.3 91.3 190.7 79.7 285.8 87.8C381 96 476 124 571.2 123.3C666.3 122.7 761.7 93.3 857 90.2C952.3 87 1047.7 110 1143 125.5C1238.3 141 1333.7 149 1428.8 140.5C1524 132 1619 107 1714.2 102C1809.3 97 1904.7 112 1952.3 119.5L2000 127L2000 201L1952.3 201C1904.7 201 1809.3 201 1714.2 201C1619 201 1524 201 1428.8 201C1333.7 201 1238.3 201 1143 201C1047.7 201 952.3 201 857 201C761.7 201 666.3 201 571.2 201C476 201 381 201 285.8 201C190.7 201 95.3 201 47.7 201L0 201Z" fill="#191825" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
         </div>
@@ -66,11 +69,15 @@ function App() {
         <div className="wave-down">
           <svg id="visual" viewBox="0 0 2000 200" width="2000" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 159L47.7 139C95.3 119 190.7 79 285.8 68.7C381 58.3 476 77.7 571.2 98.8C666.3 120 761.7 143 857 147C952.3 151 1047.7 136 1143 121.8C1238.3 107.7 1333.7 94.3 1428.8 100.2C1524 106 1619 131 1714.2 129.8C1809.3 128.7 1904.7 101.3 1952.3 87.7L2000 74L2000 0L1952.3 0C1904.7 0 1809.3 0 1714.2 0C1619 0 1524 0 1428.8 0C1333.7 0 1238.3 0 1143 0C1047.7 0 952.3 0 857 0C761.7 0 666.3 0 571.2 0C476 0 381 0 285.8 0C190.7 0 95.3 0 47.7 0L0 0Z" fill="#191825" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
         </div>
+        {/* PROJECTS SECTION */}
         <div id="projects">
           <h2>MY PROJECTS</h2>
           <div id="projects-cont" className='flex w-80'>
+            {/* HORIZONTAL CAGE */}
             <div id="project-width70" className='flex flex-wrap w-70'>
+              {/* LARGE PROJECT */}
               <div className="project flex project1-color justify-between">
+                {/* TEXT */}
                 <div className="text-project w-60">
                   <h3>
                     Jacob's Manual
@@ -81,12 +88,15 @@ function App() {
                   </div>
                   <p>Here, you can discover numerous tips and exercises to help you learn programming.</p>
                 </div>
-                <div className="images-project w-40" id='img1-project1'>
+                {/* IMAGE */}
+                <div className="images-project w-40 flex align-end" id='img1-project1'>
                   <img src="Images/project-images/image1.png" alt="img1" />
                 </div>
               </div>
-              <div className="project flex w-50 project2-color">
-                <div className="text-project">
+              {/* SHORT PROJECT */}
+              <div className="project flex flex-column w-50 project2-color justify-between">
+                {/* TEXT */}
+                <div className="text-project w-100">
                   <h3>
                     JacobFitness
                   </h3>
@@ -94,10 +104,16 @@ function App() {
                     <img src="Images/tech-logos/node.png" alt="" />
                     <img src="Images/tech-logos/react.png" alt="" />
                   </div>
-                  <p>Welcome to JacobFitness, where you can manage your workout routine and track gym goals interactively.</p>
+                  <p className='w-80 little-project'>Welcome to JacobFitness, where you can manage your workout routine and track gym goals interactively.</p>
+                </div>
+                {/* IMAGE */}
+                <div className="flex flex-end images-project w-100 align-end" id='img2-project2'>
+                  <img src="Images/project-images/image2.png" alt="img2" />
                 </div>
               </div>
+              {/* SHORT PROJECT */}
               <div className="project flex flex-column w-50 project3-color">
+                {/* TEXT */}
                 <div className="text-project little-project w-100">
                   <h3>
                     Jacob’s Calendar
@@ -108,11 +124,13 @@ function App() {
                   </div>
                   <p>A fantastic app, free for everyone! It allows you to manage your own calendars.</p>
                 </div>
-                <div className="images-project w-100 flex flex-end" id='img3-project3'>
+                {/* IMAGE */}
+                <div className="images-project w-100 flex flex-end align-end justify-between" id='img3-project3'>
                   <img src="Images/project-images/image3.png" alt="" />
                 </div>
               </div>
             </div>
+            {/* VERTICAL CAGE */}
             <div id='project-width30' className='flex flex-wrap w-30'>
               <div className="project flex flex-column project4-color">
                 <div className="text-project w-90">
@@ -129,6 +147,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/* FOOTER SECTION */}
       </div>
     </>
 

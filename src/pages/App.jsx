@@ -70,8 +70,8 @@ function App() {
           <h2>MY PROJECTS</h2>
           <div id="projects-cont" className='flex w-80'>
             <div id="project-width70" className='flex flex-wrap w-70'>
-              <div className="project flex">
-                <div className="text-project">
+              <div className="project flex project1-color justify-between">
+                <div className="text-project w-60">
                   <h3>
                     Jacob's Manual
                   </h3>
@@ -81,43 +81,49 @@ function App() {
                   </div>
                   <p>Here, you can discover numerous tips and exercises to help you learn programming.</p>
                 </div>
-              </div>
-              <div className="project flex w-50">
-                <div className="text-project">
-                  <h3>
-                    Jacob's Manual
-                  </h3>
-                  <div className="project-logos flex flex-start">
-                    <img src="Images/tech-logos/node.png" alt="" />
-                    <img src="Images/tech-logos/react.png" alt="" />
-                  </div>
-                  <p>Here, you can discover numerous tips and exercises to help you learn programming.</p>
+                <div className="images-project w-40" id='img1-project1'>
+                  <img src="Images/project-images/image1.png" alt="img1" />
                 </div>
               </div>
-              <div className="project flex w-50">
+              <div className="project flex w-50 project2-color">
                 <div className="text-project">
                   <h3>
-                    Jacob's Manual
+                    JacobFitness
                   </h3>
                   <div className="project-logos flex flex-start">
                     <img src="Images/tech-logos/node.png" alt="" />
                     <img src="Images/tech-logos/react.png" alt="" />
                   </div>
-                  <p>Here, you can discover numerous tips and exercises to help you learn programming.</p>
+                  <p>Welcome to JacobFitness, where you can manage your workout routine and track gym goals interactively.</p>
+                </div>
+              </div>
+              <div className="project flex flex-column w-50 project3-color">
+                <div className="text-project little-project w-100">
+                  <h3>
+                    Jacob’s Calendar
+                  </h3>
+                  <div className="project-logos flex flex-start">
+                    <img src="Images/tech-logos/node.png" alt="" />
+                    <img src="Images/tech-logos/react.png" alt="" />
+                  </div>
+                  <p>A fantastic app, free for everyone! It allows you to manage your own calendars.</p>
+                </div>
+                <div className="images-project w-100 flex flex-end" id='img3-project3'>
+                  <img src="Images/project-images/image3.png" alt="" />
                 </div>
               </div>
             </div>
             <div id='project-width30' className='flex flex-wrap w-30'>
-              <div className="project flex flex-column">
-                <div className="text-project">
+              <div className="project flex flex-column project4-color">
+                <div className="text-project w-90">
                   <h3>
-                    Jacob's Manual
+                    Jacob’s Store
                   </h3>
                   <div className="project-logos flex flex-start">
                     <img src="Images/tech-logos/node.png" alt="" />
                     <img src="Images/tech-logos/react.png" alt="" />
                   </div>
-                  <p>Here, you can discover numerous tips and exercises to help you learn programming.</p>
+                  <p>Explore my store for a variety of products from Jacobs Products Industries that suit your needs perfectly. Enjoy a personalized shopping experience!</p>
                 </div>
               </div>
             </div>

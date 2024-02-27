@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/*! COLORS */
 :root {
   --dark: #191825;
   --dark-light: #2a2f4f;
@@ -13,6 +10,7 @@
   --light: #d9d9d9;
 }
 
+/*! GLOBAL */
 html,
 body {
   margin: 0;
@@ -26,21 +24,45 @@ body {
   background-attachment: fixed;
 }
 
+/*! BACKGORUND */
+.black-background{
+  background-color: var(--dark);
+}
+
+/*! CONTS */
+.w-100{
+  width: 100%;
+}
+
+.w-80{
+  width: 80%;
+}
+
+.w-70{
+  width: 70%;
+}
+
+.w-50{
+  width: 48%;
+}
+
+.w-30{
+  width: 30%;
+}
+
+/* ! FONT */
 
 h2{
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
-  font-size: 4em;
+  font-size: 5em;
   color: var(--dark);
   margin: auto;
   width: 40%;
   text-align: center;
 }
 
-/* body{ */
-/* padding: 0 40px; */
-/* } */
-
+/*! NAV */
 nav ul {
   list-style: none;
 }
@@ -48,4 +70,46 @@ nav ul {
 a {
   text-decoration: none;
   color: var(--light);
+}
+
+
+/*! FLEX */
+.flex{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.flex-end{
+  justify-content: flex-end;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-no-wrap{
+  flex-wrap: nowrap;
+}
+
+.align-center, .items-center{
+  align-items: center;
+}
+
+.flex-column{
+  flex-direction: column;
 }

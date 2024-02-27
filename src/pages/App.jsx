@@ -133,6 +133,7 @@ function App() {
             {/* VERTICAL CAGE */}
             <div id='project-width30' className='flex flex-wrap w-30'>
               <div className="project flex flex-column project4-color">
+                {/* TEXT */}
                 <div className="text-project w-90">
                   <h3>
                     Jacob’s Store
@@ -142,6 +143,10 @@ function App() {
                     <img src="Images/tech-logos/react.png" alt="" />
                   </div>
                   <p>Explore my store for a variety of products from Jacobs Products Industries that suit your needs perfectly. Enjoy a personalized shopping experience!</p>
+                </div>
+                {/* IMAGE */}
+                <div className="images-project w-100 flex flex-end align-end" id='img4-project4'>
+                  <img src="Images/project-images/image1.png" alt="img1" />
                 </div>
               </div>
             </div>

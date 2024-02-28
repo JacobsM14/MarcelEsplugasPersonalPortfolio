@@ -29,8 +29,10 @@ function App() {
           </nav>
           <div className='info-header-content flex justify-between'>
             <div className="title-content flex flex-column">
-              <h1 className=''>Hi,I’m Marcel.</h1>
-              <p className=''>I build websites.</p>
+              <h1 className='desktop-title'>Hi,I’m Marcel.</h1>
+              <h1 className='mobile-title'>Marcel Esplugas</h1>
+              <p>I build websites.</p>
+
             </div>
             <div className='images-and-links flex flex-column justify-center'>
               <img src={logo} alt="logo" />

@@ -26,8 +26,8 @@ export const Works = ({ img, work, empresa, start, working, final, active, setAc
               <h5>{work}</h5>
             </div>
             <div className='icons-arrow flex'>
-              <button style={{ display: `${active === id ? 'none' : 'block'}`}} onClick={handleClick}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 14l-5-5m0 0l-5 5" /></svg></button>
-              <button style={{ display: `${active === id ? 'block' : 'none'}` }} onClick={unsetActive}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5" /></svg></button>
+              <button style={{ display: `${active === id ? 'block' : 'none'}`}} onClick={unsetActive}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 14l-5-5m0 0l-5 5" /></svg></button>
+              <button style={{ display: `${active === id ? 'none' : 'block'}` }} onClick={handleClick}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5" /></svg></button>
             </div>
           </div>
           <div className="lista" style={{ display: `${active === id ? 'block' : 'none'}`, transition: "1s"}}>

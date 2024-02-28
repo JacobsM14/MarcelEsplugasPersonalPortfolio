@@ -120,10 +120,10 @@ body {
 h2 {
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
-  font-size: 86px;
+  font-size: 6.5em;
   color: var(--dark);
   margin: auto;
-  width: 40%;
+  width: 60%;
   text-align: center;
   margin: 50px auto 200px;
 
@@ -184,4 +184,28 @@ a {
 
 .flex-column {
   flex-direction: column;
+}
+
+@media (max-width: 1014px)
+{
+  h2 {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 640px)
+{
+  h2 {
+    font-size: 4em;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px)
+{
+  h2 {
+    font-size: 3em;
+    width: 90%;
+    margin: 100px auto;
+  }
 }

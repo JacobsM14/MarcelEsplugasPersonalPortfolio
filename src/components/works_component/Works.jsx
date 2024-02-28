@@ -1,6 +1,6 @@
 import React, { useId, useState } from 'react'
 
-export const Works = ({ img, work, empresa, start, working, final, active, setActive }) => {
+export const Works = ({ img, work, empresa, start, working, final, active, setActive, img1, img2 }) => {
 
   // CHANGE VISIBILITY OF WORKS FT. YasaiPajas
   const [index, setWorkData] = useState({
@@ -39,8 +39,8 @@ export const Works = ({ img, work, empresa, start, working, final, active, setAc
           </div>
         </div>
         <div className='logos flex flex-end' style={{ display: `${active === id ? 'flex' : 'none'}`, transition: "1s"}}>
-          <img src="Images/tech-logos/node.png" alt="" />
-          <img src="Images/tech-logos/react.png" alt="" />
+          {img1 == "windows" ? <img src="Images/tech-logos/windows.png" alt="windows" /> : <img src="Images/tech-logos/odoo.png" alt="odoo" />}
+          {img2 == "linux" ? <img src="Images/tech-logos/linux.png" alt="linux" /> : <img src="Images/tech-logos/python.webp" alt="python" />}
 
         </div>
       </div>

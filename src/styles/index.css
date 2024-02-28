@@ -8,6 +8,7 @@
   --secondary: #9d76c1;
   --tertiary: #645caa;
   --light: #d9d9d9;
+  --white: #fff;
 }
 
 /*! GLOBAL */
@@ -16,23 +17,68 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: linear-gradient(138deg, #9d76c1, #d9d9d9);
+  background: linear-gradient(260deg, #9d76c1, #ffffff);
   background-size: 400% 400%;
 
-  -webkit-animation: AnimationName 13s ease infinite;
-  -moz-animation: AnimationName 13s ease infinite;
-  -o-animation: AnimationName 13s ease infinite;
-  animation: AnimationName 13s ease infinite;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
 
 /*! ANIMATIONS BACKGROUND */
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 38%
+  }
+
+  50% {
+    background-position: 100% 63%
+  }
+
+  100% {
+    background-position: 0% 38%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 38%
+  }
+
+  50% {
+    background-position: 100% 63%
+  }
+
+  100% {
+    background-position: 0% 38%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 38%
+  }
+
+  50% {
+    background-position: 100% 63%
+  }
+
+  100% {
+    background-position: 0% 38%
+  }
+}
 
 /*! BACKGORUND */
 .black-background {
   background-color: var(--dark);
+}
+
+.black-background h2{
+  color: var(--primary) !important;
 }
 
 /*! CONTS */
@@ -73,11 +119,13 @@ body {
 h2 {
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
-  font-size: 5em;
+  font-size: 86px;
   color: var(--dark);
   margin: auto;
   width: 40%;
   text-align: center;
+  margin: 50px auto 200px;
+
 }
 
 /*! NAV */

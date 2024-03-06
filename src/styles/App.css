@@ -644,6 +644,7 @@ header nav a:hover {
 }
 
 #technologies-i-use h2 {
+  padding-top: 100px;
   margin-top: 0px;
   margin-bottom: 220px;
 }

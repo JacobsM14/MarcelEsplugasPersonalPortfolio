@@ -25,8 +25,8 @@ export const Works = ({ img, work, empresa, start, working, final, active, setAc
             <h5>{work}</h5>
           </div>
           <div className='icons-arrow'>
-            <button style={{ display: `${active === id ? 'block' : 'none'}` }} onClick={unsetActive}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 14l-5-5m0 0l-5 5" /></svg></button>
-            <button style={{ display: `${active === id ? 'none' : 'block'}` }} onClick={handleClick}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l5 5m0 0l5-5" /></svg></button>
+            <a style={{ display: `${active === id ? 'block' : 'none'}` }} onClick={unsetActive}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"/></svg></a>
+            <a style={{ display: `${active === id ? 'none' : 'block'}` }} onClick={handleClick}><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062"/></svg></a>
           </div>
         </div>
         <div className="lista" style={{ display: `${active === id ? 'block' : 'none'}`, transition: "1s" }}>

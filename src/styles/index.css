@@ -30,12 +30,24 @@ body {
   animation: AnimationName 30s ease infinite;
 }
 
+/*! WAVES */
+.wave-up{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .wave-4000{
   display: none;
 }
 
 .wave-900{
   display: none;
+}
+
+.wave-500{
+  /* width: 100%; */
+  /* height: 20px; */
 }
 
 /*! ANIMATIONS BACKGROUND */

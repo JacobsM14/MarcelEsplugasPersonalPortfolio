@@ -18,6 +18,7 @@ header {
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   padding-top: 100px;
+  height: 100vh;
 }
 
 /** HEADER NAV */
@@ -35,9 +36,9 @@ header nav a {
   border-radius: 100px;
   font-family: 'Inconsolata', monospace;
   font-weight: 700;
-  font-size: 1.3em;
-  padding: 2px;
-  width: 120px;
+  font-size: 2.5em;
+  padding: 5px 30px;
+  /* width: 120px; */
   text-align: center;
 }
 
@@ -61,7 +62,7 @@ header nav a:hover {
 }
 
 .title-content h1 {
-  font-size: 8em;
+  font-size: 13em;
   margin: 0px;
   margin-bottom: 0px;
 }
@@ -71,13 +72,17 @@ header nav a:hover {
 }
 
 .title-content p {
-  font-size: 2em;
+  font-size: 4em;
   font-weight: 300;
   margin: 0px;
   color: var(--light-primary);
 }
 
 /*? HEADER IMAGE AND LINKS */
+.images-and-links{
+  width: 50%;
+}
+
 .images-and-links img {
   width: 100%;
   box-shadow: -15px 15px 0px 0px var(--primary);
@@ -93,8 +98,8 @@ header nav a:hover {
 }
 
 .url-svg a svg {
-  width: 60px !important;
-  height: 60px !important;
+  width: 100px !important;
+  height: 100px !important;
   box-shadow: none;
   height: unset;
   fill: var(--primary);
@@ -107,7 +112,7 @@ header nav a:hover {
 
 /* HOVERS */
 
-.stackoverflow-hover:hover svg {
+.stackoverflow_icon:hover svg {
   animation: stackoverflow-animation 1s forwards;
 }
 
@@ -121,7 +126,7 @@ header nav a:hover {
   }
 }
 
-.email-hover:hover svg {
+.email_icon:hover svg {
   animation: email-animation 1s forwards;
 }
 
@@ -135,7 +140,7 @@ header nav a:hover {
   }
 }
 
-.cv-hover:hover svg{
+.cv_icon:hover svg{
   animation: cv-animation 1s forwards;
 }
 
@@ -149,7 +154,7 @@ header nav a:hover {
   }
 }
 
-.github-hover:hover svg {
+.git_icon:hover svg {
   animation: github-animation 1s forwards;
 }
 
@@ -164,7 +169,7 @@ header nav a:hover {
   }
 }
 
-.linkedin-hover:hover svg {
+.linkedin_icon:hover svg {
   animation: linkedin-animation 1s forwards;
 }
 
@@ -179,7 +184,7 @@ header nav a:hover {
 
 }
 
-.medium-hover:hover svg {
+.medium_icon:hover svg {
   animation: medium-animation 1s forwards;
 }
 
@@ -192,6 +197,10 @@ header nav a:hover {
     fill: #ed457c;
   }
 
+}
+
+@media (max-width: 2234px){
+  
 }
 
 @media (max-width: 1200px) {
@@ -340,15 +349,6 @@ header nav a:hover {
 #row-works {
   width: 40%;
   /* overflow: auto; */
-  scrollbar-width: none;
-  /* For Firefox */
-  -ms-overflow-style: none;
-  /* For Internet Explorer and Edge */
-}
-
-#row-works::-webkit-scrollbar {
-  /* For Chrome, Safari and Opera */
-  display: none;
 }
 
 #row-works h4 {
@@ -463,7 +463,7 @@ header nav a:hover {
 .vertical-line {
   width: 10px;
   /* height: 100px; */
-  background-color: var(--light-primary);
+  background-color: var(--secondary);
 }
 
 /*? ABOUT ME */
@@ -1011,7 +1011,6 @@ header nav a:hover {
 /*! PROJECTS */
 /*? GLOBAL */
 #projects-cont {
-  width: 90%;
   margin: 100px auto;
   gap: 30px;
 }
@@ -1043,7 +1042,7 @@ header nav a:hover {
 }
 
 .project3-color {
-  background-color: var(--light-primary) !important;
+  background-color: #E893CF;
 }
 
 .project4-color {
@@ -1088,7 +1087,7 @@ header nav a:hover {
 
 .text-project p {
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
+  font-size: 20px;
   text-shadow: 0px 2px 9px rgb(0, 0, 0, 0.5);
   font-weight: 500;
   color: white;
@@ -1105,7 +1104,7 @@ header nav a:hover {
 }
 
 #img1-project1 img {
-  width: 100%;
+  /* width: 100%; */
   height: 250px;
 }
 
@@ -1117,7 +1116,7 @@ header nav a:hover {
 #img2-project2 img {
   width: 220px;
   /* width: 100%; */
-  height: 100%;
+  /* height: 100%; */
 }
 
 #img3-project3 {
@@ -1128,7 +1127,7 @@ header nav a:hover {
 
 #img3-project3 img {
   width: 220px;
-  height: 100%;
+  /* height: 100%; */
 }
 
 #img4-project4 {
@@ -1138,7 +1137,7 @@ header nav a:hover {
 }
 
 #img4-project4 img {
-  width: 350px;
+  /* width: 350px; */
   height: 300px;
 }
 

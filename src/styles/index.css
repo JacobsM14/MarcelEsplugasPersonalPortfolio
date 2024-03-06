@@ -20,28 +20,36 @@ body {
   scroll-behavior: smooth;
 }
 
-body {
+.background-gradient{
   background: linear-gradient(260deg, #9d76c1, #ffffff);
   background-size: 400% 400%;
-
-
+  
+  
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
 }
 
+.wave-4000{
+  display: none;
+}
+
+.wave-900{
+  display: none;
+}
+
 /*! ANIMATIONS BACKGROUND */
 @-webkit-keyframes AnimationName {
   0% {
-    background-position: 0% 38%
+    background-position: 0% 38%;
   }
 
   50% {
-    background-position: 100% 63%
+    background-position: 100% 63%;
   }
 
   100% {
-    background-position: 0% 38%
+    background-position: 0% 38%;
   }
 }
 
@@ -120,12 +128,11 @@ body {
 h2 {
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
-  font-size: 6.5em;
+  font-size: 2.5em;
   color: var(--dark);
   margin: auto;
-  width: 60%;
   text-align: center;
-  margin: 50px auto 200px;
+  /* margin: 50px auto 200px; */
 
 }
 
@@ -184,28 +191,4 @@ a {
 
 .flex-column {
   flex-direction: column;
-}
-
-@media (max-width: 1014px)
-{
-  h2 {
-    font-size: 5em;
-  }
-}
-
-@media (max-width: 640px)
-{
-  h2 {
-    font-size: 4em;
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px)
-{
-  h2 {
-    font-size: 3em;
-    width: 90%;
-    margin: 100px auto;
-  }
 }
